@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Coders</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "poppins", sans-serif;
+      }
+
+      /* Header */
+
+      header {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        position: sticky;
+        z-index: 1000;
+        background-color: black;
+      }
+
+      header nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+      }
+
+      header nav .logo {
+        display: flex;
+        grid-template-columns: 25px 25px;
+        gap: 16px;
+        align-items: center;
+      }
+
+      header nav .logo a {
+        color: aqua;
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      header nav .nav-content {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+      }
+
+      header nav .nav-content a {
+        color: aqua;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 15px;
+      }
+
+      header nav .nav-content a:hover {
+        color: white;
+      }
+
+      /* hero */
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(img/bg.jpg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        /* filter: blur(5px); */
+      }
+
+      .hero .hero-content {
+        text-align: left;
+        width: 50%;
+      }
+
+      .hero .hero-content h1 {
+        font-size: 3.5em;
+        line-height: 1.4;
+        color: aqua;
+      }
+
+      .hero .hero-content p {
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+        padding-right: 20px;
+      }
+
+      .hero .hero-content .btn-content {
+        align-items: center;
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .hero .hero-content .btn-content a {
+        background: black;
+        padding: 8px 16px;
+        color: var(--color2);
+        font-size: 20px;
+        border-radius: 0.5rem;
+        font-weight: bolder;
+        border: aqua solid;
+        color: aqua;
+      }
+
+      .hero .hero-content .btn-content a:hover {
+        background: #fff;
+        transition: 0.5s;
+        color: black;
+      }
+
+      .hero .hero-img img {
+        border-radius: 20px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo (1).jpg" alt="" />
+          <a href="#">Hello Coders</a>
+        </div>
+        <div class="nav-content">
+          <a href="#programs">Programs</a>
+          <a href="#locations">Locations</a>
+          <a href="#community">Community</a>
+          <a href="#about">About</a>
+        </div>
+      </nav>
+    </header>
+    <!-- header Section End -->
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Hello Para Coders!!!</h1>
+        <p>
+          We are here as a solution for those of you who want to develop your
+          career in the field of technology, especially Web Programming. Various
+          programs interesting, ready to guide you to become a great programmer.
+          Program available of course with teachers who are experts in their
+          fields each. What are you waiting for? Come on, hurry up and register!
+        </p>
+        <div class="btn-content">
+          <a href="login.php">Login</a>
+          <a href="registrasi.php">Register</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img/web_programming.jpg" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
